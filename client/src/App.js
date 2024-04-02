@@ -1,12 +1,22 @@
 import './App.css';
 
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import TeamPlanner from './team-planner/TeamPlanner';
 
 function App() {
   return (
-    <h1>
-      Hello, World!
-    </h1>
+    <Container fluid>
+      <Row>
+        <Col className="p-0">
+          <p>This will be the topbar</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="p-0">
+          <TeamPlanner></TeamPlanner>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
